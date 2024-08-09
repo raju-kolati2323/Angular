@@ -1,0 +1,45 @@
+<div class="row r1">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="row r2">
+        <div class="card col-md-4" *ngFor="let d of dishlist">
+            <div class="card-body" *ngIf="!d.pflag">
+                <img [src]="d.image" alt="{{d.dishname}}" class="rounded img" height="40%" width="100%">
+                <h6 class="d-flex justify-content-center">{{d.dishname}}</h6>
+                <p class="p1"><i>{{d.cost}}</i></p>
+                <p class="p1">{{d.ingredients}}</p>
+                <p><sub>{{d.description}}</sub></p>
+            </div>
+            <!-- update -->
+                    <div class="card-body" *ngIf="d.pflag">
+                        <div class="form-group">
+                            <label class="form-label" for="">Image link</label>
+                            <input class="form-control" type="text" [(ngModel)]="d.image">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">Dishname</label>
+                            <input class="form-control" type="text" [(ngModel)]="d.dishname">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">Cost</label>
+                            <input class="form-control" type="text" [(ngModel)]="d.cost">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">Ingredients</label>
+                            <input class="form-control" type="text" [(ngModel)]="d.ingredients">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">Description</label>
+                            <input class="form-control" type="text" [(ngModel)]="d.description">
+                        </div>
+                    </div>
+            <!-- /update --> 
+            <div class="card-footer" align="center">
+                <button (click)="edit(d)" *ngIf="!d.pflag" class="btn btn-primary">Edit</button>&nbsp;&nbsp;
+                <button (click)="update(d)" *ngIf="d.pflag" class="btn btn-success">Update</button>&nbsp;&nbsp;
+                <button (click)="delete(d.id, d.cuisine)" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

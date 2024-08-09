@@ -1,0 +1,8 @@
+export class dishes{
+    id:any;
+    image:any;
+    dishname:any;
+    ingredients:any;
+    description:any;
+    cost:any;
+}

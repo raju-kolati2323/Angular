@@ -1,0 +1,36 @@
+<div class="full">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form action="" [formGroup]="signupform" (ngSubmit)="signup()">
+                        <h1 class="d-flex justify-content-center">Sign up</h1>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" name="uname"
+                            formControlName="username" required pattern="[a-zA-Z0-9]{4,}">
+                    </div><br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" name="email"
+                            formControlName="email" required>
+                    </div><br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" name="pwd"
+                            formControlName="password" required pattern="[a-zA-Z0-9]{7}">
+                    </div><br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm password" name="pwd"
+                            formControlName="cp" required pattern="[a-zA-Z0-9]{7}">
+                    </div><br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Contact" name="contact"
+                            formControlName="contact" required pattern="[6-9]{1}[0-9]{9}">
+                    </div><br>
+                    <div class="form-group">
+                        <button type="submit" class="btn" [disabled]="!signupform">Signup</button>
+                        <a routerLink="" class="link d-flex justify-content-center">Already have an account ? - <p>Login</p></a>
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+            </div>

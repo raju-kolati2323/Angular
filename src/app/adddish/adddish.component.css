@@ -1,0 +1,63 @@
+.container{
+    position: relative;
+    top:-30px;
+}
+.inputGroup{
+    position: relative;
+    top: -20px;
+  }
+  .cu{
+    position: relative;
+    top:-50px
+  }
+  .cul{
+    position: relative;
+    top:10px;
+  }
+  .btn{
+    position: relative;
+    top: -35px;
+  }
+  select{
+    border-radius: 15px;
+  }
+  .inputGroup {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 1em 0 1em 0;
+      max-width: 100%;
+      position: relative;
+    }
+    
+    .inputGroup input {
+      font-size: 100%;
+      padding: 0.5em;
+      outline: none;
+      border: 2px solid grey;
+      background-color: transparent;
+      border-radius: 20px;
+      width: 100%;
+    }
+    
+    .inputGroup label {
+      font-size: 100%;
+      position: absolute;
+      left: 0;
+      top:0px;
+      padding: 0.8em;
+      margin-left: 0.5em;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      color:black
+    }
+    
+    .inputGroup :is(input:focus, input:valid)~label {
+      transform: translateY(-50%) scale(.9);
+      margin: 0em;
+      margin-left: 1.3em;
+      padding: 0.3em;
+      background-color:lightgrey
+    }
+    
+    .inputGroup :is(input:focus, input:valid) {
+      border-color: rgb(150, 150, 200);
+    }

@@ -1,0 +1,27 @@
+<div class="row r1">
+    <div class="col-md-4 c1">
+        <div class="row">
+            <div class="col-md-12 ">
+                <p class="p1 d-flex justify-content-center">What kind of food you are</p>
+                <p class="p2 d-flex justify-content-center">looking for?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11">
+                <div class="row">
+                <div class="card col-md-4 justify-content-center" *ngFor="let c of categorylist">
+                    <a [routerLink]="[c.url]"> <!-- Add appropriate route and parameters -->
+                        <div class="card-body">
+                            <img [src]="c.image" alt="{{c.title}}" class="rounded img-fluid">
+                            <p class="p3 d-flex justify-content-center">{{c.title}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <router-outlet></router-outlet>
+    </div>
+</div>

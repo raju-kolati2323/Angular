@@ -1,0 +1,42 @@
+<div class="container-fluid full">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm">
+                <button class="btn btn-dark navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="mynav">
+                        <ul class="navbar-nav">
+                            <li class="nav-brand"><a routerLink="/user/home" class="nav-link i1"><img
+                                        src="https://imagetolink.com/ib/oa4PVzarxS.png" alt="" height="70px"
+                                        width="70px"></a>
+                            </li>
+                            <li class="nav-item"><a routerLink="/user/home/indian" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                            <li class="nav-item"><a routerLink="/user/about" class="nav-link">About <i class="fa-regular fa-comment"></i></a></li>
+                            <li class="nav-item"><a routerLink="/user/wishlist" class="nav-link">Wishlist <i class="fa-regular fa-heart"></i></a></li>
+                            <li class="nav-item"><a routerLink="/user/userorders" class="nav-link">Orders <i class="fa-regular fa-calendar-days"></i></a></li>
+                            <li class="nav-item dropdown">
+                                <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img rel="icon" src="https://imagetolink.com/ib/sjiuxNpN0H.jpg" alt="Profile"
+                                        height="30px" width="30px">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a routerLink="/user/userprofile"
+                                            class="nav-link"><i class="fa-solid fa-user"></i> Profile</a>
+                                    </li>
+                                    <li class="dropdown-item"><a routerLink="/user/home" (click)="logout()"
+                                            class="nav-link">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <router-outlet></router-outlet>
+    </div>
+</div>

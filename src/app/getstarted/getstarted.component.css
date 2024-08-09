@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Cutive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.p1,.p12{
+    font-family: courgette;
+    font-size: 45px;
+    font-weight: bold;
+    color:#a52a2a;
+    word-spacing: 5px;
+}
+.p12{
+    position: relative;
+    top: -25px;
+}
+.p2{
+    font-family: cutive;
+    font-size: 20px;
+    color: #a52a2a;
+    line-height: 15px;
+}
+button{
+    background-color: #c89d7c;
+    border-radius: 50px;
+    width: 40%;
+    height: 65px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #c89d7c;
+}
+.r1{
+    position: relative;
+    top:-30px;
+}
+.r2{
+    position: relative;
+    top:-40px;
+}
+.col-md-5{
+    position: relative;
+    top: 60px;
+}
+img{
+    border-radius: 10px;
+    height: 120%;
+}

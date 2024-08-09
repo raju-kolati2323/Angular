@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.full{
+    background: url('https://imagetolink.com/ib/WO6uJ9Dsx4.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    }
+.col-md-6{
+    position: relative;
+    top: 50px;
+}
+.form-group{
+    position: relative;
+    top: 30px;
+}
+h1{
+    font-family:cookie;
+    -webkit-text-stroke: 1.3px black;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+}
+input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+input{
+    border-radius: 15px ;
+    border: 1.5px solid black;
+    opacity: 90%;
+    text-align: center;
+    line-height: 30px;
+}
+button{
+    background-color: #8D6647;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    width:100%;
+    border:1.5px solid black;
+    line-height: 30px;
+}
+button:hover{
+    background-color: #8D6647;
+}
+a{
+    color: black;
+    position: relative;
+    top:25px;
+    font-weight:bold;
+}
